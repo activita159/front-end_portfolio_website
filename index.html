@@ -41,8 +41,8 @@
                         </a>
                     </li>
                     <li class="nav-item nav4">
-                        <a class="nav-link"
-                            href="https://pda.104.com.tw/profile/share/a1FIU5aZVFlpVA8KJmI6fstfim2MHbn7" target="_blank">
+                        <a class="nav-link" href="https://pda.104.com.tw/profile/share/a1FIU5aZVFlpVA8KJmI6fstfim2MHbn7"
+                            target="_blank">
                             <span>Resume</span>
                         </a>
                     </li>
@@ -106,7 +106,7 @@
                         </ul>
                         <p class="h3">
                             <span>License</span>
-                            
+
                         </p>
                         <span><img src="imgs/License-icon.png" width="25px" alt="">丙級網頁設計技術士</span>
                         <p class="h3">
@@ -128,49 +128,49 @@
         <p class="h2">
             <span>Portfolio</span>
         </p>
-        <div class="container">  
+        <div class="container">
             <a href="https://activita159.github.io/microsoft/" target="_blank">
-                <div class="item1">   
+                <div class="item1">
                     <span>
                         RWD-Microsoft仿切
-                    </span> 
+                    </span>
                 </div>
-            </a> 
+            </a>
             <a href="https://activita159.github.io/bootstrapIndexShoppingCart/" target="_blank">
-                <div class="item2">   
+                <div class="item2">
                     <span>
                         RWD-Bootstrap 4切版
-                    </span> 
+                    </span>
                 </div>
-            </a> 
+            </a>
             <a href="https://activita159.github.io/fetchAPI/" target="_blank">
-                <div class="item3">   
+                <div class="item3">
                     <span>
                         Taiwan's Weather-Fetch API
-                    </span> 
+                    </span>
                 </div>
-            </a> 
+            </a>
             <a href="imgs/someDraw.png" target="_blank">
-                <div class="item4">   
+                <div class="item4">
                     <span>
                         Artworks
-                    </span> 
+                    </span>
                 </div>
-            </a>  
+            </a>
             <a href="https://activita159.github.io/color-picker/" target="_blank">
-                <div class="item5">   
+                <div class="item5">
                     <span>
                         Color Picker Game
-                    </span> 
+                    </span>
                 </div>
-            </a> 
+            </a>
             <a href="https://activita159.github.io/meteorAnimation/" target="_blank">
-                <div class="item6">   
+                <div class="item6">
                     <span>
                         Meteor Animation
-                    </span> 
-                </div>                     
-            </a>  
+                    </span>
+                </div>
+            </a>
         </div>
         <p class="p-footer"><i><code>&lt;/section&gt;</code></i></p>
     </section>
@@ -244,7 +244,7 @@
             <div class="text">
                 <div class="cardbody">
                     <p class="title">
-                        工業製圖2015-2020
+                        CNC工業製圖師2015-2020
                     </p>
                     <p class="h2">
                         2015
@@ -314,34 +314,41 @@
     <script>
         var navbarToggler = document.querySelector('.navbar-toggler');
         var navbarContent = document.querySelector('.navbar-content');
-        navbarToggler.addEventListener('click',function (e) {
-            navbarContent.style = 'display:unset';
+        navbarToggler.addEventListener('click', function (e) {
+            navbarContent.classList.toggle('show');
+            navbarToggler.classList.toggle('focus');
             e.stopPropagation();
-            document.addEventListener('click',function (e) {
-                navbarContent.style = 'display:none';                
+            document.addEventListener('click', function (e) {                
+                console.log(e.target, this);
+                navbarContent.classList.remove('show');
+                navbarToggler.classList.remove('focus');
             })
-
         })
 
+
+
+
         //Get the button
-var mybutton = document.getElementById("myBtn");
+        var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
