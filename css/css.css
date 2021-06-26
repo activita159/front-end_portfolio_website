@@ -191,22 +191,22 @@ body{
 }
 .portfolio .container .item1{
     
-    background-image: url("./imgs/Micorsoft.png");
+    background-image: url("../imgs/Micorsoft.png");
 }
 .portfolio .container .item2{
     background-image: url("../imgs/bootstrape4.png");
 }
 .portfolio .container .item3{
-    background-image: url("imgs/fetchTaiwanWeather.png");
+    background-image: url("../imgs/fetchTaiwanWeather.png");
 }
 .portfolio .container .item4{
-    background-image: url("imgs/someDraw.png");
+    background-image: url("../imgs/someDraw.png");
 }
 .portfolio .container .item5{
-    background-image: url("imgs/colorpicker.png");
+    background-image: url("../imgs/colorpicker.png");
 }
 .portfolio .container .item6{
-    background-image: url("imgs/moonCard.png");
+    background-image: url("../imgs/moonCard.png");
 }
 
 .portfolio .container .item1:hover,
