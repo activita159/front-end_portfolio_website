@@ -190,10 +190,11 @@ body{
     align-items: center;  
 }
 .portfolio .container .item1{
-    background-image: url("imgs/Micorsoft.png");
+    
+    background-image: url("./imgs/Micorsoft.png");
 }
 .portfolio .container .item2{
-    background-image: url("imgs/bootstrape4.png");
+    background-image: url("../imgs/bootstrape4.png");
 }
 .portfolio .container .item3{
     background-image: url("imgs/fetchTaiwanWeather.png");
