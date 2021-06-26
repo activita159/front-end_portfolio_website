@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allen</title>
+    <title>Allen Wang</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
 
@@ -25,22 +25,22 @@
             </div>
             <div class="navbar-content">
                 <ul>
-                    <li class="nav-item">
+                    <li class="nav-item nav1">
                         <a class="nav-link active" href="#aboutme" target="_self">
                             <span>Home</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav2">
                         <a class="nav-link" href="#portfolio" target="_self">
                             <span>Portfolio</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav3">
                         <a class="nav-link" href="#experience" target="_self">
                             <span>Experience</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav4">
                         <a class="nav-link"
                             href="https://pda.104.com.tw/profile/share/a1FIU5aZVFlpVA8KJmI6fstfim2MHbn7" target="_blank">
                             <span>Resume</span>
@@ -96,19 +96,24 @@
                         </p>
                         <ul>
                             <li>
-                                <img src="imgs/Graduation-cap-icon.png" width="23px" alt="">
+                                <img src="imgs/Graduation-cap-icon.png" width="25px" alt="">
                                 <span>朝陽科技大學-資訊管理系</span>
                             </li>
                             <li>
-                                <img src="imgs/Graduation-cap-icon.png" width="23px" alt="">
+                                <img src="imgs/Graduation-cap-icon.png" width="25px" alt="">
                                 <span>彰化高商-商業經營科</span>
                             </li>
                         </ul>
                         <p class="h3">
+                            <span>License</span>
+                            
+                        </p>
+                        <span><img src="imgs/License-icon.png" width="25px" alt="">丙級網頁設計技術士</span>
+                        <p class="h3">
                             <span>Contact Me</span>
                         </p>
                         <a href="mailto:activita159@gmail.com">
-                            <img src="imgs/mail-icon.png" width="23px" alt="">
+                            <img src="imgs/mail-icon.png" width="25px" alt="">activita159@gmail.com
                         </a>
                     </div>
 
@@ -145,7 +150,7 @@
                     </span> 
                 </div>
             </a> 
-            <a href="imgs/amigoMap.png" target="_blank">
+            <a href="imgs/someDraw.png" target="_blank">
                 <div class="item4">   
                     <span>
                         Artworks
@@ -303,6 +308,7 @@
         </div>
     </footer>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
     <script>
@@ -316,6 +322,26 @@
             })
 
         })
+
+        //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
     </script>
 </body>
 
