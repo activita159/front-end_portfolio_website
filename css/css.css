@@ -189,8 +189,7 @@ body{
     justify-content: center;
     align-items: center;  
 }
-.portfolio .container .item1{
-    
+.portfolio .container .item1{   
     background-image: url("../imgs/Microsoft.png");
 }
 .portfolio .container .item2{
