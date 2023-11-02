@@ -108,11 +108,12 @@ body {
     display: flex;
     align-items: center;
 }
-
-.aboutme .container .row .col-1 .profile .avatar {
-    border-radius: 50%;
+.aboutme .container .row .col-1 .profile{
     width: 270px;
-    height: 270px;
+}
+.aboutme .container .row .col-1 .profile .avatar {
+    border-radius: 1rem;
+    width: 100%;
     vertical-align: middle;
 }
 
